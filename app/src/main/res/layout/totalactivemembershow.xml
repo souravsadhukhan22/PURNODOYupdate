@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F2F4F4"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv1show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.12"
+        android:textSize="17dp"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:text="Sl No."/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv2show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Member\n Code"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv3show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Member\n Name"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv5show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Address"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/tv4show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="15dp"
+
+        android:gravity="center"
+        android:text="Phone"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

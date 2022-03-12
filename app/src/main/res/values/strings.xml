@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Purnoday Nidhi</string>
+
+    <string name="App_Full_Name">Purnoday Nidhi Limited</string>
+
+    <string name="developed_by_genius_technology">Developed by <b>Genius Technology</b></string>
+
+    <string name="nav_open_drawer">Open drawer</string>
+    <string name="nav_close_drawer">Close drawer</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="internectconnectionerror">No internet connection.</string>
+    <string name="networkerror">Server error.</string>
+
+    <string name="easyPinMessage">Use this option to create numeric mPIN which you can use to login in Purnoday Nidhi</string>
+    <string name="payunote"><b> Note </b> - You should have an already registered Email ID and Phone number with your  Purnoday Nidhi Limited.</string>
+
+    <string name="total_amount">Total Amount</string>
+    <string name="last_diposit_date">Last Deposit Date</string>
+
+
+</resources>

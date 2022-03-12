@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="3dp"
+    app:cardBackgroundColor="#ECECEC"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_loan_code"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="Loan Code"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_holder_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:hint="Holder Name"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_loan_date"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="Loan Date"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_loan_term"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="Loan Term"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_emi_mode"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="EMI Mode"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_loan_appr_amt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="Loan Appr Amt"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_emi_amt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="EMI Amt"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_emi_no"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="EMI No"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_row_loan_payment_details_paid_amt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="Paid Amt"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="#efefef"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add nominee"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_member_code"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_member_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Nominee member code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Nominee name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_custom_dialog_add_nominee_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="Date of Birth"
+                android:inputType="text" />
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_guardian_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_guardian_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Guardian name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_custom_dialog_add_nominee_guardian_relation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="Guardian relation"
+                android:inputType="text" />
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_guardian_relation"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_guardian_relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Guardian relation"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <EditText
+                android:id="@+id/et_custom_dialog_add_nominee_nominee_address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Address"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:minLines="2"
+                android:maxLines="3"
+                android:gravity="top|center"/>
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_pin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_custom_dialog_add_nominee_state"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="State"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/sp_custom_dialog_add_nominee_id_proof"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="ID proof"
+                android:inputType="text" />
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_pan"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="ID proof number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_custom_dialog_add_nominee_phone"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_custom_dialog_add_nominee_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#efefef"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_background_radius"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_button"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

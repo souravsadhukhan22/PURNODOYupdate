@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ArrangerPolicyRenewViewActivity"
+    android:focusableInTouchMode="true"
+    android:background="@color/backMain">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_activity_arranger_policy_renew_view_activity_member_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:hint="Member code"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et_activity_arranger_policy_renew_view_activity_policy_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_white"
+                    android:gravity="center"
+                    android:hint="Enter Policy code"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_activity_arranger_policy_renew_view_activity_show"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_button"
+                android:text="Show"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_renewal_collection_manual_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/et_activity_renewal_collection_polcode_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Enter PolicyCode or Name"
+                    android:background="@drawable/background_white"
+                    android:textSize="12sp"
+                    android:paddingStart="10dp"/>
+                <Button
+                    android:id="@+id/btn_activity_renewal_collection_manual_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Search"
+                    android:background="@drawable/login_button"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_activity_renewal_collection_policy_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_arranger_policy_renew_view_activity_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_arranger_policy_renew_view_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/background_white"/>
+
+            <Button
+                android:id="@+id/btn_activity_arranger_policy_renew_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/login_button"
+                android:text="Save As PDF"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

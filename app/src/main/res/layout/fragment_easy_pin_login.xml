@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_white">
+
+        <androidx.viewpager.widget.ViewPager
+            android:visibility="gone"
+            android:id="@+id/vp_activity_member_login_two_login_options"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/background_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fragment_easy_pin_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:hint="Username"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"/>
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_activity_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:theme="@style/TextLabelCustom"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_fragment_easy_pin_login_four_digit_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="4 Digit Pin"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:maxLength="4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_fragment_easy_pin_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="50dp"
+                    android:paddingStart="50dp"
+                    android:paddingTop="15dp"
+                    android:textSize="12sp"
+                    android:text="Login"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:gravity="end">
+                <TextView
+                    android:id="@+id/tv_fragment_easy_pin_forgot_pin"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Forgot PIN?"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

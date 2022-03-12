@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminDashboardActivity"
+    android:orientation="vertical"
+    android:background="@color/backMain">
+
+    <include
+        layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:background="@drawable/pnl_logo" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#00EBEBEB"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        android:layout_margin="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/colorBlack">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <Button
+                    android:id="@+id/btn_admin_dashboard_logout"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="Logout"
+                    android:background="@drawable/button_background_radius"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_logout_small"
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"
+                    android:textAllCaps="false"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_chain_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Chain Report"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_new_renew_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="New Renew Business"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_admin_dash_savings_acc_ledger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Saving Account Ledger"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_background_trans"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_member_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Member Search"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_investment_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Investment Search"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_loan_acc_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Loan Acc Search"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_background_trans"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:visibility="gone"
+                        android:id="@+id/tv_admin_dash_loan_approval"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Loan Approval"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_admin_dash_loan_payment_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Loan Payment Report"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_executive_collection_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Employee Collection Report"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_account_savings_trans_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Savings account Transaction Report"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_mobile_collection_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_background_trans"
+                        android:text="Mobile Collection Report"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_activity_admin_dashboard_account_ledger_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Account Ledger Report"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/border_background_trans"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_executive_bank_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Bank Book"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_executive_cash_sheet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Cash Sheet"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_executive_bank_trans_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Bank Trans\nReport"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_admin_dash_executive_loan_payment_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Loan Payment\nReport"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

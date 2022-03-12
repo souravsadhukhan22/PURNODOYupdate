@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberElectricityRechargeActivity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <include
+        layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_activity_electricity_recharge_select_savings_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/background_white"
+            android:text="Select savings account"
+            android:textColor="@color/colorText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_electricity_large"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="*"
+                    android:textStyle="bold"
+                    android:textColor="#ff0909"
+                    android:gravity="center"/>
+                <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                    android:id="@+id/til_activity_dth_recharge_customer_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginEnd="40dp"
+                    android:theme="@style/TextLabelCustom"
+                    app:errorEnabled="true"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_activity_customer_number_recharge_customer_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:inputType="number"
+                        android:paddingRight="4dp"
+                        android:textSize="12sp"
+                        android:maxLength="10"
+                        android:textColor="#ff2727"
+                        android:hint="Consumer ID"/>
+                </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_contacts"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="*"
+                    android:textStyle="bold"
+                    android:textColor="#ff0909"
+                    android:gravity="center"/>
+                <com.geniustechnoindia.purnodaynidhi.others.SearchableSpinner
+                    android:id="@+id/ss_activity_electricity_bill_select_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="40dp"
+                    app:hintText="Select provider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="*"
+                    android:textStyle="bold"
+                    android:textColor="#ff0909"
+                    android:gravity="center"/>
+                <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                    android:id="@+id/til_activity_dth_recharge_customer_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginEnd="40dp"
+                    android:theme="@style/TextLabelCustom"
+                    app:errorEnabled="true"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_activity_electricity_bill_recharge_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:inputType="number"
+                        android:paddingRight="4dp"
+                        android:textSize="12sp"
+                        android:maxLength="10"
+                        android:textColor="#ff2727"
+                        android:hint="Amount"/>
+                </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:layout_margin="5dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_contacts"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+                <Button
+                    android:id="@+id/btn_activity_electricity_recharge_proceed_to_pay_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/login_button"
+                    android:textColor="#ffffff"
+                    android:text="Proceed to Pay Bill"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

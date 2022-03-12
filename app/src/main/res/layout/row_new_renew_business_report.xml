@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_policy_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Policy Code"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_term"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Term"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_deposit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Deposit"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_row_new_renew_busi_maturity_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Maturity"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+
+</LinearLayout>

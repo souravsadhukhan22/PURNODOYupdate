@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CustomerActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/colorWhite"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/transparent_white_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/pnl_logo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_white_background"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/login_button"
+                        android:gravity="center"
+                        android:text="About us"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_customer_about_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="3dp"
+                        android:textColor="#505050" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_white_background"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_dark_gray"
+                        android:gravity="center"
+                        android:text="Our plans"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:fastScrollAlwaysVisible="true"
+                        android:fastScrollEnabled="false"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbars="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_gold_loan"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Gold loan"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_mortgage_loan"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Mortgage Loan"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_term_deposit"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Term deposits"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_savings_deposit"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Savings deposits"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_recurring_deposit"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Recurring deposits"
+                                android:textColor="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/tv_activity_customer_monthly_income"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/login_button"
+                                android:gravity="center"
+                                android:text="Monthly income"
+                                android:textColor="#ffffff" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_selected_info_layout_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/transparent_white_background">
+
+                    <ImageView
+                        android:id="@+id/iv_activity_customer_selected_info_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_show_customer_gold_loan_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.5" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

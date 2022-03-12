@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/drawable/login_button.xml" value="0.1" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activememberpolicyshow.xml" value="0.25" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.22" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_admin_executive_collection_report.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_agent_statement_and_print_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_apply_now.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_about_us.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_investment_calc.xml" value="0.25" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_loan_collection_manual.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_member_update_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_open_s_b_acc.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_policy_investment.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_profile_details.xml" value="0.25" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_renewal_collection_manual.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_search_policy_by_name.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_start_new_policy.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_total_active_member.xml" value="0.25" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arr_total_active_policy.xml" value="0.22" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_account_opening.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_active_member_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_change_pass.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_loan_coll_by_search.xml" value="0.1" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_loan_statement_and_print.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_member_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_policy_renew_view_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_s_b_collection.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_statements.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_broadband_rechargenew.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_contact_us.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_contact_us_member.xml" value="0.22" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_customer.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_easy_pin.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_member_policy.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/totalactivemembershow.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

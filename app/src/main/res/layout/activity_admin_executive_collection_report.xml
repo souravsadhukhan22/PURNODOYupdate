@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminExecutiveCollectionReportActivity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/backMain">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@color/colorBlackHint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_activity_admin_executive_collection_arranger_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Employee Code"
+                android:gravity="center"
+                android:textColor="@color/colorBlack" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/btn_activity_admin_executive_collection_from_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="From Date"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/border_background_trans"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn_activity_admin_executive_collection_to_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Date"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/border_background_trans"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_activity_admin_executive_collection_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:background="@drawable/border_background_trans"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_background_trans"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_row_admin_executive_collection_policy_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Policy Code"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlackHint"
+                android:layout_weight="2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_row_admin_executive_collection_inst_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Inst No"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlackHint"
+                android:layout_weight="2.3"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_row_admin_executive_collection_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Amount"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlackHint"
+                android:layout_weight="2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_row_admin_executive_collection_date_of_renewal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DateofRenewal "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlackHint"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_acrivity_admin_executive_collection_report_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

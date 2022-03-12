@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanEmiCalculatorActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Select Loan Term"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Min - 1 Month          Max - 36 Months"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_back_black_light_custom">
+            <TextView
+                android:id="@+id/tv_activity_loan_emi_calculator_months"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Months"
+                android:gravity="center"/>
+
+            <SeekBar
+                android:id="@+id/sb_activity_loan_emi_calculator_months"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:minWidth="30dp"
+                android:maxWidth="30dp"
+                android:min="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Select Loan Amount"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_activity_loan_emi_calculator_amount_head"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:text="Min - \u20B9 1000       ---     Max - \u20B9 200000"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_back_black_light_custom">
+            <TextView
+                android:id="@+id/tv_activity_loan_emi_calculator_amt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Amount"
+                android:gravity="center"/>
+
+            <SeekBar
+                android:id="@+id/sb_activity_loan_emi_calculator_amt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:min="1000"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_activity_loan_emi_cal_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_data_emi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:text="EMI"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_data_pay_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PAYDATE"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="EMI"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_data_interest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Interest"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_data_principle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Principle"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/tv_row_loan_calculator_emi_data_current_bal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Current Bal"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_activity_loan_emi_calculator_emi_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

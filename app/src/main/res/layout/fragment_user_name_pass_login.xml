@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#00ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="~ Member Login ~"
+                android:textColor="#365ccf"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_activity_login_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_activity_member_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Member code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/colorText" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout
+                android:id="@+id/til_activity_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_activity_member_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </com.geniustechnoindia.purnodaynidhi.util.NoChangingBackgroundTextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_activity_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_activity_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:digits="01234567890"
+                    android:hint="Phone number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLoginDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="date Of Birth (Touch)"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <CheckBox
+                    android:id="@+id/cb_activity_member_login_remember_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/colorText"
+                    android:text="Remember Me"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_activity_customer_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button"
+                    android:paddingStart="50dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="15dp"
+                    android:text="Login"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

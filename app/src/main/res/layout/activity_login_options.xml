@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backMain"
+    tools:context=".activities.LoginOptionsActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/pnl_logo"
+                    android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:text="@string/App_Full_Name"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_login_options_activity_member_login"
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/border_background_trans"
+                            android:gravity="center"
+                            android:text="Member Login"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_login_options_activity_associate_login"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Employee Login"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_login_options_activity_customer_login"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/button_background_radius"
+                        android:gravity="center"
+                        android:text="Customer Login"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_login_options_activity_admin_login"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="Admin Login"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_login_options_activity_about_company"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/border_background_trans"
+                        android:gravity="center"
+                        android:text="About US(Contact)"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/btn_avtivity_login_option_contact_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_background_black"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Contact Us"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

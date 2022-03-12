@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activities.ArrangerStatementActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_activity_arranger_statements_savings_account_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/statement_background_shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Savings account details"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_arranger_statements_savings_loan_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/statement_background_shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Loan Details"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_arranger_statements_policy_account_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/statement_background_shape">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Policy Details"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

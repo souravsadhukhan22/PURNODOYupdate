@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.CanHub:Android-Image-Cropper:3.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/400c9ef7e200ca92052bd3c79135bf9d/transformed/jetified-Android-Image-Cropper-3.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/400c9ef7e200ca92052bd3c79135bf9d/transformed/jetified-Android-Image-Cropper-3.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/400c9ef7e200ca92052bd3c79135bf9d/transformed/jetified-Android-Image-Cropper-3.1.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CanHub/Android-Image-Cropper/3.1.3/cba48eb533a53eb832172470335466d98ae7b631/Android-Image-Cropper-3.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

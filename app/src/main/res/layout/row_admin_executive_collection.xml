@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F3F3F3"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_row_admin_executive_collection_policy_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Policy Code"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"
+            android:layout_weight="2"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tv_row_admin_executive_collection_inst_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Inst No"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"
+            android:layout_weight="2.3"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tv_row_admin_executive_collection_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Amount"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"
+            android:layout_weight="2"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tv_row_admin_executive_collection_date_of_renewal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="DateofRenewal "
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"
+            android:layout_weight="2"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

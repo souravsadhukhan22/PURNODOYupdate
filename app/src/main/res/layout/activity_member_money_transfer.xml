@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberMoneyTransferActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_activity_member_money_transfer_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Mobile number"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp"
+                android:background="@drawable/background_white"/>
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_check_if_registered"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_button"
+                android:text="Check"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_member_money_transfer_main_buttons_root"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_add_beneficiary_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Add Beneficiary"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/login_button"/>
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_view_beneficiary_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="View Benef. List"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/login_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_member_money_transfer_create_wallet_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create wallet"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_member_money_transfer_create_wallet_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:hint="Mobile number"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_activity_member_money_transfer_create_wallet_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:hint="First name"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_activity_member_money_transfer_create_wallet_middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:hint="Middle name"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_activity_member_money_transfer_create_wallet_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:hint="Last name"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_create_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/login_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_member_money_transfer_create_wallet_otp_validation_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Verify Wallet Creation"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_activity_member_money_transfer_mobile_number_of_otp_validation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:hint="Mobile number"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_activity_member_money_transfer_enter_otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:hint="Enter OTP"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_validate_otp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+               android:background="@drawable/login_button"
+                android:text="Validate"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_activity_member_money_transfer_add_beneficiary_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Add Beneficiary"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_activity_member_money_transfer_add_beneficiary_close"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_cross" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_add_beneficiary_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="Beneficiary name"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_add_beneficiary_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="Beneficiary Mobile No"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_add_beneficiary_account_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="Account no"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_add_beneficiary_ifsc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="IFSC Code"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_add_beneficiary_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="Bank name"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_member_money_transfer_create_wallet_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:hint="Branch name"
+                    android:textColor="@color/foreColor"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_activity_member_money_transfer_add_beneficiary_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/login_button"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_member_money_transfer_otp_validation_form_add_beneficiary_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Verify Add Beneficiary"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_activity_member_money_transfer_mobile_number_add_beneficiary_otp_validation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+
+                android:gravity="center"
+                android:hint="Mobile number"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_activity_member_money_transfer_enter_otp_add_beneficiary_otp_validation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+
+                android:gravity="center"
+                android:hint="Enter OTP"
+                android:textColor="@color/foreColor"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_activity_member_money_transfer_enter_otp_add_beneficiary_validate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/login_button"
+                android:text="Validate"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

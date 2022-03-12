@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_row_chain_report_details_serial_no"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:hint="Serial No"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/login_button"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+
+        <TextView
+            android:id="@+id/row_chain_report_details_arranger_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Code"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"/>
+
+        <TextView
+            android:id="@+id/row_chain_report_details_arranger_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"/>
+
+        <TextView
+            android:id="@+id/row_chain_report_details_renewal_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Amount"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       android:visibility="gone">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Arranger Code -- "
+           android:gravity="center"
+           android:layout_weight="2"
+           android:textColor="@color/colorBlack"/>
+       <TextView
+           android:id="@+id/x"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:hint="Arranger Code"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:textColor="@color/colorBlack"
+           android:textColorHint="@color/colorBlackHint"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Arranger Name -- "
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/xx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Arranger Name"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Renewal Amount -- "
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/xxx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Renewal Amount"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlackHint"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack" />
+
+    
+
+</LinearLayout>

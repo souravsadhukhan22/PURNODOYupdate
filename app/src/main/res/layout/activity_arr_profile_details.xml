@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArrProfileDetailsActivity"
+    android:orientation="vertical"
+    android:background="@color/backMain">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Code - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_arr_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Code"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Name - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Name"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Date of Join - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_doj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Date of Join"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DOB - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_dob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="DOB"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Father - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_father"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Father"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Address - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Address"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Email"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Phone - "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/tv_activity_arr_profile_details_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:textColor="@color/colorBlack"
+                android:hint="Phone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

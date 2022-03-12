@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminLoanPaymentReportActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"
+        android:background="@color/backMain"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/border_background"
+                android:padding="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btn_activity_admin_loan_payment_from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="From\nDate"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btn_activity_admin_loan_payment_to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="To\nDate"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_activity_admin_loan_payment_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:layout_marginTop="3dp"
+                android:textSize="10sp"
+                android:background="@drawable/border_background_white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Search By --- "
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/sp_activity_admin_loan_payment_report_ofc_or_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_admin_loan_payment_report_ofc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:text="Select OFC - "
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/sp_activity_admin_loan_payment_report_ofc_code"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_admin_loan_payment_report_loan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/et_activity_admin_loan_payment_report_loan_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:hint="Enter Loan Code"
+                    android:gravity="center"
+                    android:background="@drawable/border_background_white"/>
+
+                <Button
+                    android:id="@+id/btn_activity_admin_loan_payment_report_submit_loan_code"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Loan Code"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_loan_code"
+                            android:layout_width="91dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Loan Code"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_holder_name"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="Holder Name"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_loan_date"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Loan Date"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_loan_term"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:text="Loan Term"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_emi_mode"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:text="EMI Mode"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_loan_appr_amt"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Loan Appr Amt"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_emi_amt"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="EMI Amt"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_emi_no"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:text="EMI No"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_row_loan_payment_details_paid_amt"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Paid Amt"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_activity_admin_loan_payment_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

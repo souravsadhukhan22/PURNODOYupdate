@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backMain"
+    tools:context=".activities.MemberSBStatementPDFActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/sp_activity_main_sb_acc_details_sb_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_activity_arr_sb_statement_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="From Date"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/border_background_trans"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/btn_activity_arr_sb_statement_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="To Date"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/border_background_trans"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_arr_sb_statement_submit_date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:background="@drawable/border_background_trans"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_activity_print_savings_statement_activity_enter_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/background_white"
+            android:hint="Enter account no." />
+
+        <Button
+            android:id="@+id/btn_activity_print_savings_statement_activity_search"
+            android:layout_width="100dp"
+            android:background="@drawable/login_button"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_height="match_parent"
+            android:text="Search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_white"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name - "
+                    android:textStyle="bold"
+                    android:textColor="#282828"
+                    android:textSize="12sp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_print_savings_statement_activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:hint="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Membercode - "
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#282828"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_print_savings_statement_activity_member_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Membercode"
+                    android:textSize="12sp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_savings_account_statement_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/background_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_calendar"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="SlNo"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_calendar"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="TDate"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e2e2e2"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_payment_mode"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Mode"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e2e2e2"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_deposit"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Deposit"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e2e2e2"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_withdraw"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Withdraw"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e2e2e2"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_payment_mode"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Balance"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_activity_print_savings_statement_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Current Balance - "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_activity_print_savings_statement_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:hint="Balance"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_activity_print_savings_statement_activity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="@drawable/border_background_solid"
+            android:text="Save as PDF"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

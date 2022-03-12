@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberMoneyTransferNewTransMoneyActivity"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_background">
+
+            <Spinner
+                android:id="@+id/sp_activity_meber_money_trans_new_trans_money_sb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_activity_member_money_trans_new_trans_money_sb_bal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_member_money_trans_new_trans_money_details_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_activity_member_money_trans_new_trans_money_amt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_background"
+                android:hint="Enter Transfer Amount(Min 101)"
+                android:paddingStart="5dp"
+                android:layout_marginTop="5dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/et_activity_member_money_trans_new_trans_money_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_background"
+                android:hint="Remarks"
+                android:paddingStart="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btn_activity_member_money_trans_new_trans_money_transfer"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background_buttons"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Transfer Money"
+                android:drawableEnd="@drawable/ic_send"
+                android:paddingEnd="5dp"
+                android:drawablePadding="-5dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

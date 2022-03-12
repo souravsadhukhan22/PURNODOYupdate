@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#E3DDDD"
+android:orientation="horizontal"
+android:layout_marginTop="5dp">
+
+
+<TextView
+    android:id="@+id/tv1policyshow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.12"
+    android:layout_marginLeft="10dp"
+    android:textSize="15dp"
+    android:layout_gravity="center"
+    android:text="Sl no."/>
+
+<View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"/>
+<TextView
+    android:id="@+id/tv2policyshow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.95"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginRight="7dp"
+    android:textSize="15dp"
+    android:text="PCode"/>
+<View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"/>
+<TextView
+    android:id="@+id/tv3policyshow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.98"
+    android:textSize="15dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="6dp"
+    android:gravity="center"
+    android:text="Name"
+
+    />
+<View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv4policyshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="0.95"
+        android:gravity="center"
+        android:text="Phone"
+        android:textSize="15dp" />
+
+    <View
+    android:layout_width="2dp"
+    android:layout_height="match_parent"/>
+
+<TextView
+    android:id="@+id/tv5policyshow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:textSize="15dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:text="Deposit"/>
+
+
+
+
+</LinearLayout>
+

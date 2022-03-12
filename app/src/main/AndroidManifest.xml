@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.geniustechnoindia.purnodaynidhi">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.geniustechnoindia.purnodaynidhi.app.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnjuNidhi"
+        tools:ignore="LockedOrientationActivity">
+
+
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberSBStatementPDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMoneyTransferNewTransMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMoneyTransferNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AboutCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanStatementMemberNewActivity" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.LoanEmiCalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrAboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrInvestmentCalcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrSearchPolicyByNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrStartNewPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerAccountOpeningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrPolicyInvestmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrProfileDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrLoanCollectionManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrRenewalCollectionManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanEMICalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoanEmiPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMyLoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberContactUSCustomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoanAganistDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoanAganistPropertyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberApplyForLoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberInvestmentCalcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberCreateNewPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberPaySelfPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerMemberDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerLoanCollBySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberProfileUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrMemberUpdateInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerActiveMemberSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.InvestmentPlanDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanPlanDetailsGroupLoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanPlanDetailsIndivLoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanPlanDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.PlanDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AgentLoanDueReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerChangePassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AgentSavingsStatementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.UpdateAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberTransferMoneyFinalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberBeneficiaryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMoneyTransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberDataCardRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberRechargeOption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrTotalActiveMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrTotalActivePolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenNoTitle"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.AssociateLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenNoTitle"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.NewMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.RenewalCollectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.LoanCollectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.WalletBalanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoginOptionsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.CustomerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberDashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberSavingsAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberSavingsAccountStatementActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.InvestmentAccountMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanStatementMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberProfileViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ApplyNowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MISCalculatorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberSetEasyPINActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ForgotPinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerStatementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerLoanStatementAndPrint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerPolicyRenewViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.LoanEmiStatementMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminBankBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminAccLedgerReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminBankTransReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminCashSheetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminChainReportDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminDashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminExecutiveCollectionReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminLoanPaymentReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminMemberSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminMobileCollReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminNewRenewBusinessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.AdminSBAccTransReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberMobileRechargeNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberElectricityBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberDTHRechargeNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberBroadbandRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLandlineBillPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberGasBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberWaterBillPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberFirstTimeLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberEnterOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberChangePasswordOneTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberCodeForOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.EasyPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberSBtoSBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberLoanPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.MemberInvestmentCalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrangerSBCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geniustechnoindia.purnodaynidhi.activities.ArrOpenSBAccActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

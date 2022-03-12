@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArrLoanCollectionManualActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="LOAN COLLECTION"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_activity_loan_collection"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/background_white"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone">
+
+                            <RadioButton
+                                android:id="@+id/radio_activity_loan_collection_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Name"
+                                android:buttonTint="@color/colorBlack"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_activity_loan_collection_acc_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Acc No"
+                                android:buttonTint="@color/colorBlack"/>
+
+                        </RadioGroup>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/txtSearchLoan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/background_white"
+                                android:elevation="8dp"
+                                android:textColor="@color/headingDarkLoanRenewal"
+                                android:textColorHint="@color/hintLoanRenewal"
+                                android:hint="Loan Code"
+                                android:maxLines="1"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:padding="9.5dp"
+                                android:enabled="true"
+                                android:textSize="14dp"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnSearchLoan"
+                                android:layout_width="90dp"
+                                android:layout_height="42dp"
+                                android:background="@drawable/button_background_buttons"
+                                android:elevation="6dp"
+                                android:text="Search"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_activity_renewal_collection_manual_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_activity_renewal_collection_polcode_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_white"
+                        android:hint="Enter LoanCode or Name"
+                        android:paddingStart="10dp"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_activity_renewal_collection_manual_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/login_button"
+                        android:text="Search"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sp_activity_renewal_collection_policy_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <Spinner
+                    android:id="@+id/sp_activity_loan_collection_acc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp" />
+
+                <Button
+                    android:id="@+id/btn_activity_loan_collection_submit"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Submit"
+                    android:background="@drawable/button_background_buttons"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cover"
+                android:orientation="vertical"
+                android:padding="18px">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2.5dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="150dp"
+                    android:background="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/login_button"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Loan Details"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_white"
+                        android:padding="5px">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:background="#60FFFFFF" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardCornerRadius="50dp">
+
+                            <ImageView
+                                android:id="@+id/ivLoanHolderImage"
+                                android:layout_width="52dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ic_user"
+                                android:scaleType="centerCrop" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Loan Holder Name"
+                                android:textColor="@color/headingDarkLoanRenewal"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtLoanHolderName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:hint="TextView"
+                                android:textColorHint="@color/hintLoanRenewal"
+                                android:textColor="@color/textLoanRenewal"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_home_menu" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="#32133767">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan Code"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="0.05"
+                                    android:hint="Loan Code"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="55dp"
+                                android:background="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan Date"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="1"
+                                    android:hint="01/01/18"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan Amount"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="0.05"
+                                    android:hint="Loan Amount"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="55dp"
+                                android:background="@drawable/background_home_menu" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan Term"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanTerm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="1"
+                                    android:hint="Term"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="#32133767">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EMI Amount"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanEMIAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="0.05"
+                                    android:hint="EMI Amount"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="55dp"
+                                android:background="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mode"
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanMode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="1"
+                                    android:hint="Mode"
+                                    android:textSize="15dp"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phone number"
+                                android:textColor="@color/headingDarkLoanRenewal"
+                                android:textSize="16.5dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvPhoneNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="0.05"
+                                android:hint="Phone number"
+                                android:textSize="15dp"
+                                android:textColorHint="@color/hintLoanRenewal"
+                                android:textColor="@color/textLoanRenewal"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Enter No of EMI"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"/>
+
+                            <EditText
+                                android:id="@+id/et_activity_arr_loan_coll_by_search_no_of_emi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_white"
+                                android:hint="No of EMI"
+                                android:gravity="center"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/background_white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".7"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Deposit Amount :- "
+                                    android:textColor="@color/headingDarkLoanRenewal"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtDepositAmount"
+                                    android:layout_width="90dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/background_white"
+                                    android:gravity="center"
+                                    android:hint="Amount"
+                                    android:inputType="number"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="1"
+                                android:visibility="gone">
+
+                                <Button
+                                    android:id="@+id/btnEMIView"
+                                    android:layout_width="120dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/button_background_buttons"
+                                    android:text="VIEW"
+                                    android:textColor="#fff"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/background_white"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtLateFine"
+                                    android:layout_width="160dp"
+                                    android:layout_height="40dp"
+                                    android:background="#c6e6e6e6"
+                                    android:gravity="center"
+                                    android:hint="Net Amount"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtLoanEMIFromInstNo"
+                                    android:layout_width="116dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/background_white"
+                                    android:gravity="center"
+                                    android:hint="From Inst."
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLoanEMIToInstNo"
+                                    android:layout_width="120dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/background_white"
+                                    android:gravity="center"
+                                    android:hint="To Inst."
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"
+                                    android:textSize="16.5dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="60dp"
+                                android:background="#ACACAC" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_activity_renewal_collection_late_fine_root"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/background_white"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingBottom="5dp"
+                                android:text="Late fine details"
+                                android:textColor="@color/headingDarkLoanRenewal"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/login_button">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="EMI No."
+                                    android:textColor="@color/colorWhite" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Late fine"
+                                    android:textColor="@color/colorWhite" />
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_activity_loan_collection_loan_emi_late_fine"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_white"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Total late fine"
+                                    android:textColor="@color/headingDarkLoanRenewal" />
+
+                                <TextView
+                                    android:id="@+id/tv_activity_renewal_collection_total_late_fine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:hint="Late fine"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <CheckBox
+                                    android:id="@+id/cb_activity_arranger_loan_collection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Pay late fine amount"
+                                    android:textColorHint="@color/hintLoanRenewal"
+                                    android:textColor="@color/textLoanRenewal"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_activity_loan_collection_wallet_bal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:hint="wallet Balance"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"/>
+
+                            <CheckBox
+                                android:id="@+id/cb_activity_loan_collection_check_for_approval"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Check for approval"
+                                android:layout_weight="1.3"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnLoanEMISave"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_background_buttons"
+                            android:text="Save"
+                            android:textColor="#ffffff"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/btn_Loan_EMI_Save"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_background_buttons"
+                            android:text="Save"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

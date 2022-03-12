@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoanPlanDetailsActivity"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <include layout="@layout/custom_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_activity_loan_plan_details_rd_plan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/border_back_black_light_custom"
+            android:text="Individual Loan Details"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_activity_loan_plan_details_fd_plan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/border_back_black_light_custom"
+            android:text="Group Loan Details"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

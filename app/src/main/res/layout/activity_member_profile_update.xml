@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberProfileUpdateActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_activity_member_profile_update_member_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Enter Member Code"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorHint"
+            android:background="@drawable/border_background_black_border"/>
+
+        <Button
+            android:id="@+id/btn_activity_member_profile_update_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:text="Search"
+            android:layout_marginLeft="3dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:hint="Name"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="DOB"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <Button
+                    android:id="@+id/btn_activity_member_profile_update_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="DOB"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Father"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_father"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Father"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Address"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Address"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="State"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="State"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pincode"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Pincode"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Phone"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Email"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gender"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/et_activity_member_profile_update_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Gender"
+                    android:gravity="center|start"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Blood Group"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"/>
+
+                <Spinner
+                    android:id="@+id/sp_activity_member_profile_update_blood_gr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Blood Group"
+                    android:textSize="12sp"
+                    android:gravity="center|start"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorHint" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_activity_member_profile_update_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backMain">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_activity_member_policy_my_policy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="My Policy"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_policy"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"/>
+
+        <TextView
+            android:id="@+id/tv_activity_member_policy_start_new_policy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Start New Policy"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_policy"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_activity_member_policy_investment_calc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Investment Calculator"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_calculator"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

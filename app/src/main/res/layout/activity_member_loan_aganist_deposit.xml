@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberLoanAganistDepositActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MCode"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MName"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MDOB"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_mcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="MCode"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_mname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="MName"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_mdob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="MDOB"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Address"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Phone"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pan"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Phone"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_member_loan_against_policy_pan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Pan"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorHint"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"/>
+
+        <EditText
+            android:id="@+id/et_activity_member_loan_aganist_policy_enter_amt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_back_black_light_custom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Loan Amount"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_activity_member_loan_aganist_policy_enter_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_back_black_light_custom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Tenure/Month"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Select Policy Code"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+      <Spinner
+          android:id="@+id/sp_activity_member_loan_aganist_policy_list"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+         android:layout_marginLeft="35dp"
+          android:layout_marginRight="35dp"/>
+
+        <Button
+            android:id="@+id/btn_activity_member_loan_aganist_policy_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Send Loan Request"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_back_black_light_custom"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

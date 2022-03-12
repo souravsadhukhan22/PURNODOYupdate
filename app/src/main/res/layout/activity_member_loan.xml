@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MemberLoanActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_activity_member_loan_my_loan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="My Loan"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_policy"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"/>
+
+        <TextView
+            android:id="@+id/tv_activity_member_loan_start_new_loan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Start New Loan"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_policy"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_activity_member_loan_investment_calc"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Loan Calculator"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:background="@drawable/border_background_black_border"
+            android:drawableLeft="@drawable/ic_calculator"
+            android:paddingStart="20dp"
+            android:drawablePadding="-20dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

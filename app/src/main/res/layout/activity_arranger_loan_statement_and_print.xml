@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backMain"
+    tools:context=".activities.ArrangerLoanStatementAndPrint"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:id="@+id/et_activity_arranger_loan_statement_loan_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_white"
+                android:gravity="center"
+                android:hint="Enter loan code"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_activity_arranger_loan_statement_and_print_show"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_button"
+                android:text="SHOW"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_arranger_loan_statement_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_activity_arranger_loan_statement_and_print"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/background_white"/>
+
+            <Button
+                android:id="@+id/btn_activity_arranger_loan_statement_and_print_save_loan_statement_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/login_button"
+                android:text="Save as PDF"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
