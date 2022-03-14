@@ -27,16 +27,19 @@
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_loan_coll_by_search.xml" value="0.1" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_loan_statement_and_print.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_member_details.xml" value="0.20416666666666666" />
-        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_policy_renew_view_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_policy_renew_view_activity.xml" value="0.25" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_s_b_collection.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_arranger_statements.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_broadband_rechargenew.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_contact_us.xml" value="0.20416666666666666" />
-        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_contact_us_member.xml" value="0.22" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_contact_us_member.xml" value="0.25" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_customer.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_easy_pin.xml" value="0.20416666666666666" />
-        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_member_dashboard_activity.xml" value="0.25" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_member_policy.xml" value="0.20416666666666666" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_member_profile_update.xml" value="0.25" />
+        <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/activity_member_profile_view.xml" value="0.20416666666666666" />
         <entry key="..\:/PurnodayNidhi/app/src/main/res/layout/totalactivemembershow.xml" value="0.22" />
       </map>
     </option>

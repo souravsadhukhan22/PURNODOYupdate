@@ -317,7 +317,7 @@
                             android:paddingTop="15dp"
                             android:paddingEnd="50dp"
                             android:paddingBottom="15dp"
-                            android:text="Contact"
+                            android:text="Contact US"
                             android:textColor="#ffffff"
                             android:textSize="12sp" />
                     </LinearLayout>
